@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preload" as="image" href="/src/minecraft.jpg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>★ server</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../src/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="../src/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../src/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../src/favicon-512x512.png">
+
+    <link rel="shortcut icon" href="../src/favicon.ico">
+
+    <script src="/src/transitions.js" defer></script>
+    <script src="/src/server.js" defer></script>
+</head>
+
+<body class="modpacks">
+
+<a href="/" class="top_btn">home</a>
+
+<div class="card server_card">
+
+    <h1>margoles // server</h1>
+    <!-- <a href="/" target="_blank" class="download_btn">канал сервера</a> -->
+    <h3>может понадобится впн</h6>
+
+    <div class="server_info">
+        <div class="info_row">
+            <span class="info_label">ip</span>
+            <button class="copy_btn" data-copy="play.margoles.xyz">
+                <span class="copy_value">play.margoles.xyz</span>
+                <span class="copy_hint">copy</span>
+            </button>
+        </div>
+
+        <div class="info_row">
+            <span class="info_label">version</span>
+            <span class="info_value">1.21.11</span>
+        </div>
+
+        <div class="info_row">
+            <span class="info_label">access</span>
+            <span class="info_value">whitelist // по заявке</span>
+        </div>
+    </div>
+
+    <h2 class="section_title">как получить инвайт</h2>
+    <ol class="steps">
+        <li>заполни форму ниже</li>
+        <li>заявка прилетит нам в telegram</li>
+        <li>ответим в течение суток</li>
+    </ol>
+
+    <form id="invite_form" class="invite_form" autocomplete="off">
+        <label class="field">
+            <span>minecraft ник</span>
+            <input type="text" name="nick" required minlength="3" maxlength="16" pattern="[A-Za-z0-9_]+" placeholder="Steve_123">
+        </label>
+
+        <label class="field">
+            <span>telegram</span>
+            <input type="text" name="tg" required minlength="2" maxlength="64" placeholder="@username">
+        </label>
+
+        <label class="field">
+            <span>возраст</span>
+            <input type="number" name="age" required min="10" max="99" placeholder="18">
+        </label>
+
+        <label class="field">
+            <span>откуда узнал / о себе</span>
+            <textarea name="about" required minlength="5" maxlength="500" rows="4" placeholder="пара слов о себе"></textarea>
+        </label>
+
+        <button type="submit" class="submit_btn" id="submit_btn">отправить заявку</button>
+
+        <p class="form_status" id="form_status"></p>
+    </form>
+
+    <h2 class="section_title">контакты</h2>
+    <div class="contacts">
+        <a href="https://t.me/zqape" class="contact_btn">telegram // @zqape</a>
+    </div>
+
+</div>
+
+</body>
+</html>
